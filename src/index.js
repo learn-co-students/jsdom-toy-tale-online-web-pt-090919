@@ -109,4 +109,4 @@ getToys().then(toys => {
   toys.forEach(toy => {
     renderToys(toy)
   })
-})
+})  
