@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
       toyForm.style.display = "none";
     }
   });
-  //let createBtn = document.querySelector('input.submit') Good for future referance
+  // Good for future referance---let createBtn = document.querySelector('input.submit') 
+  // querySelector in the event
   let toyF = document.querySelector('.add-toy-form') 
   toyF.addEventListener('submit',newToy)
   fetchToys();
@@ -31,7 +32,7 @@ function fetchToys() {
         })
       })
       .catch((error) => {
-        alert('fix it!')
+        alert('Error in fetchToys')
         document.body.innerHTML = error.message
       })
 }  
@@ -53,11 +54,10 @@ function newToy(event) {
    })
  })
  .then((reps) => {
-  
-   return reps.json()
+  return reps.json()
  })
   .then(joy => {
-   //  console.log(joy) Good for future referance
+   // Good for future referance--console.log(joy) 
     putToy(joy)
   })
  .catch((error) => {
@@ -120,8 +120,7 @@ function newToy(event) {
     .then(data => {
       paragraph.innerText = `${data.likes} Likes`
     })
-
-  //  console.log(currentLike)
+    //  console.log(currentLike)
   }
 
 
