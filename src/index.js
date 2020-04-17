@@ -87,9 +87,9 @@ function newToy(event) {
     // display likes 
     likes.textContent = `${joy.likes} Likes`
     // like btn set up
+    likeBtn.id = joy.id
     likeBtn.textContent = 'Like'
     likeBtn.classList.add("like-btn")
-    likeBtn.id = joy.id
     // append
     cardDiv.append(toyName, toyImage, likes, likeBtn)
     toyCollection.appendChild(cardDiv)
