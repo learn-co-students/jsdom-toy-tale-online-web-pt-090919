@@ -61,7 +61,7 @@ function newToy(event) {
     putToy(joy)
   })
  .catch((error) => {
-   alert('Fix it Now!')
+   alert('Fix newToy')
    document.body.innerHTML = error.message
  })
 }
@@ -74,8 +74,8 @@ function newToy(event) {
     let toyImage = document.createElement('img')
     // create elements for like and like btn
     let likes = document.createElement('p')
-    let likeBtn = document.createElement('button')
     // add eventListener for like btn
+    let likeBtn = document.createElement('button')
     likeBtn.addEventListener('click', updateLike)
     // set card ID and names
     cardDiv.setAttribute('data-id', `${joy.id}`)
