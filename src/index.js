@@ -97,7 +97,7 @@ function newToy(event) {
 
   function updateLike(event) {
     // console.log(event.currentTarget)
-    // console.log(event.currentTarget.parentElement.querySelector('p'))
+    // console.log(event.currentTarget.parentElement.querySelector('p')) same as previousSibling
       // console.log(id)
       //console.log(paragraph) 
     let paragraph = event.currentTarget.previousSibling
